@@ -52,9 +52,6 @@
         if (keysPressed.Backspace && event.key == 'e') {
             printComb();
         }
-        if (keysPressed.Backspace && event.key == 'r') {
-            printReset();
-        }
     });
 
     document.addEventListener('keyup', (event) => {
@@ -184,7 +181,7 @@
     function printComb() {
         const lettersInput = prompt("From decending order, place the letter grades you want separated by commas and a space (Ex. A-, C, B+, A, F)\nDo NOT use + on A or -/+ on F")
         const letters = lettersInput.split(',').map((str) => str.trim());
-        console.log(letters)
+
         if (percentGrades.length === letters.length) {
 
             let index = 0
@@ -201,6 +198,7 @@
                     }' is not a valid grade, if you think this is an issue dm jade.grey on discord.`)
                 } index++
             });
+            
             gradesDivs.forEach((div) => {
                 const letterGrade = div.querySelector('.mark');
                 const percentGrade = div.querySelector('.score');
@@ -255,7 +253,7 @@
                 }
             });
         } else {
-            console.log(`The number of classes does not match the number of grades provided. ${
+            alert(`The number of classes does not match the number of grades provided. ${
                 gradesDivs.length
             } to ${
                 letters.length
@@ -266,9 +264,6 @@
         }
 
 
-    }
-    function printReset() {
-        alert('Reseting grades...');
     }
     function onPageLoad() {
         alert("Script Loaded...")
