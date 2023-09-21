@@ -3,6 +3,20 @@ const letters = lettersInput.split(',').map((str) => str.trim());
 const letterGrades = document.querySelectorAll('.mark');
 const percentGrades = document.querySelectorAll('.score');
 const gradesDivs = document.querySelectorAll('div:has(.mark):has(.score):not(.mark-count)');
+const validGrades = [
+    "A",
+    "A-",
+    "B+",
+    "B",
+    "B-",
+    "C+",
+    "C",
+    "C-",
+    "D+",
+    "D",
+    "D-",
+    "F"
+];
 
 if (percentGrades.length === letters.length) {
 
@@ -20,7 +34,7 @@ if (percentGrades.length === letters.length) {
             }' is not a valid grade, if you think this is an issue dm jade.grey on discord.`)
         } index++
     });
-  
+    
     gradesDivs.forEach((div) => {
         const letterGrade = div.querySelector('.mark');
         const percentGrade = div.querySelector('.score');
@@ -75,7 +89,7 @@ if (percentGrades.length === letters.length) {
         }
     });
 } else {
-    console.log(`The number of classes does not match the number of grades provided. ${
+    alert(`The number of classes does not match the number of grades provided. ${
         gradesDivs.length
     } to ${
         letters.length
@@ -83,3 +97,4 @@ if (percentGrades.length === letters.length) {
     if (confirm("Would you like to try again?")) {
         printComb()
     }
+}
