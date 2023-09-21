@@ -1,4 +1,18 @@
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+# User Script
+
+Made with tampermonkey, untested on others.
+
+To activate, hold `backspace` and use one of the keys.
+
+- Change grades to A's and A-'s (`A`)
+- Change grades to B+'s, B's and B-'s (`B`)
+- Change grades to C+'s, C's and C-'s (`C`)
+- Change grades to D+'s, D's and D-'s (`D`)
+- Custom configuration (`E`)
+- Reset coming soon
+
 # Bookmarklets
 
 [Minified](https://www.toptal.com/developers/javascript-minifier) and then converted using [Caiorss's Bookmarklet Maker](https://caiorss.github.io/bookmarklet-maker)
