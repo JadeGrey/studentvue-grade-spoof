@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Grades Toggle
+// @name         Student Vue Grades Spoof
 // @namespace    http://tampermonkey.net/
 // @version      0.4
-// @description  When toggled will change grades to a combination of A's B's C's and D's dependant of the configuration
+// @description  When toggled will change grades to a combination of A's B's C's and D's dependant of the configuration (Hold backspace + <the corresponding letter grade or 'e' for a custom combination>. UI coming soon.
 // @author       NullProgramming
 // @match        *://*/*/PXP2_Gradebook.aspx*
 // @icon         https://rt2.region1.k12.mn.us/RT0332/synergy.ico
