@@ -7,6 +7,7 @@
 // @match        *://*/*/PXP2_Gradebook.aspx*
 // @icon         https://rt2.region1.k12.mn.us/RT0332/synergy.ico
 // @grant        none
+// @license      Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
 // ==/UserScript==
 
 (function () {
